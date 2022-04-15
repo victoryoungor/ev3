@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote fetch="." name="carlyleliu" review="https://gitlab.com/rockchip_linux/"/>
+  <default remote="carlyleliu" revision="master" sync-j="4"/>
+
+  <include name="yocto.xml" />
+
+ <project name="external/rockx" path="external/rockx" upstream="master"/>
+  <project name="external/rkmedia" path="external/rkmedia" upstream="master"/>
+  <project name="external/wifiAutoSetup" path="external/wifiAutoSetup" upstream="master"/>
+  <project name="external/update_engine" path="external/update_engine" upstream="master"/>
+  <project name="external/rtc_demo" path="external/rtc_demo" upstream="master"/>
+  <project name="external/deviceio_release" path="external/deviceio_release" upstream="master"/>
+  <project name="external/chromium" path="external/chromium" upstream="master"/>
+  <project name="external/avb" path="external/avb" upstream="master"/>
+  <project name="external/WakeWordAgent" path="external/wakeWordAgent" upstream="master"/>
+  <project name="external/LocalPlayer" path="external/LocalPlayer" upstream="master"/>
+  <project name="external/libdrm" path="external/libdrm" revision="rk33/mid/9.0/develop" upstream="rk33/mid/9.0/develop"/>
+  <project name="app/QLauncher" path="app/QLauncher" revision="develop" upstream="develop"/>
+  <project name="app/multicamera" path="app/multicamera" upstream="master"/>
+  <project name="app/qcamera" path="app/qcamera" upstream="master"/>
+  <project name="app/qfm" path="app/qfm" upstream="master"/>
+  <project name="app/alpha" path="app/alpha" upstream="master"/>
+  <project name="external/DuerClientSDK" path="external/DuerClientSDK" revision="master_64bit" upstream="master_64bit"/>
+  <project name="app/qplayer" path="app/qplayer" upstream="master"/>
+  <project name="app/multivideoplayer" path="app/multivideoplayer" upstream="master"/>
+  <project name="external/alsa-config" path="external/alsa-config" upstream="master"/>
+  <project name="external/audioservice" path="external/audioservice" upstream="master"/>
+  <project name="external/security/bin" path="external/security/bin" upstream="master"/>
+  <project name="external/bluez-alsa" path="external/bluez-alsa" upstream="master"/>
+  <project name="buildroot" revision="rockchip/2018.02-rc3" upstream="rockchip/2018.02-rc3">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="app/camera" path="app/camera" upstream="master"/>
+  <project name="external/camera_engine_cifisp" path="external/camera_engine_cifisp" upstream="master"/>
+  <project name="external/camera_engine_rkisp" path="external/camera_engine_rkisp" upstream="master"/>
+  <project name="app/demo" path="app/demo" upstream="master"/>
+  <project name="device/rockchip" path="device/rockchip" revision="master" upstream="master">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3326/BoardConfig.mk"/>
+  </project>
+  <project name="distro" upstream="master"/>
+  <project name="download" path="distro/download" upstream="master"/>
+  <project name="dl" path="buildroot/dl" revision="master"/>
+  <project name="docs" upstream="master"/>
+  <project name="external/ffmpeg" path="external/ffmpeg" upstream="master"/>
+  <project name="app/gallery" path="app/gallery" upstream="master"/>
+  <project name="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" upstream="master"/>
+  <project name="external/gst-plugins-rockchip" path="external/gst-plugins-rockchip" upstream="master"/>
+  <project name="external/gstreamer-camera" path="external/gstreamer-camera" upstream="master"/>
+  <project name="external/gstreamer-rockchip" path="external/gstreamer-rockchip" upstream="master"/>
+  <project name="kernel" path="kernel" revision="stable" upstream="stable"/>
+  <project name="external/libmali" path="external/libmali" revision="master" upstream="master"/>
+  <project name="external/linux-rga" path="external/linux-rga" upstream="master"/>
+  <project name="external/minigui" path="external/minigui" upstream="master"/>
+  <project name="external/minigui_desktop" path="external/minigui_desktop" upstream="master"/>
+  <project name="external/mpp" path="external/mpp" revision="release" upstream="release"/>
+  <project name="external/mpv" path="external/mpv" upstream="master"/>
+  <project name="app/music" path="app/music" upstream="master"/>
+  <project name="external/powermanager" path="external/powermanager" upstream="master"/>
+  <project name="external/recovery" path="external/recovery" revision="develop" upstream="develop"/>
+  <project name="debian" path="debian" upstream="master"/>
+  <project name="external/rk_pcba_test" path="external/rk_pcba_test" upstream="master"/>
+  <project name="external/security/rk_tee_user" path="external/security/rk_tee_user" upstream="master"/>
+  <project name="rkbin" path="rkbin" revision="master" upstream="master"/>
+  <project name="external/rknn-toolkit" path="external/rknn-toolkit" upstream="master"/>
+  <project name="external/rknn_demo" path="external/rknn_demo" upstream="master"/>
+  <project name="external/rkscript" path="external/rkscript" revision="master" upstream="master"/>
+  <project name="external/rkssd" path="external/rkssd" upstream="master"/>
+  <project name="external/rkupdate" path="external/rkupdate" upstream="master"/>
+  <project name="external/rkwifibt" path="external/rkwifibt" upstream="master"/>
+  <project name="app/qsetting" path="app/qsetting" revision="develop" upstream="develop"/>
+  <project name="external/softapDemo" path="external/softapDemo" upstream="master"/>
+  <project name="external/softapServer" path="external/softapServer" upstream="master"/>
+  <project name="external/tensorflow" path="external/tensorflow" upstream="master"/>
+  <project name="rktoolkit" path="external/rktoolkit" upstream="master"/>
+  <project name="tools" upstream="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3326-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3326-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3326-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3326-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3326-package-file"/>
+  </project>
+  <project name="u-boot" path="u-boot" revision="master" upstream="master"/>
+  <project name="external/uvc_app" path="external/uvc_app" upstream="master"/>
+  <project name="app/video" path="app/video" upstream="master"/>
+
+</manifest>
